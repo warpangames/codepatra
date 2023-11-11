@@ -1,0 +1,518 @@
+:root {
+    --main-color-1:#9F6FDC;
+    --main-color-2:#FFF2CF;
+}
+
+#foo {
+    color: var(--main-color-1);
+    color: var(--main-color-2);
+}
+body{
+font-family: poppins;
+}
+/*heder*/
+.header{
+    background-image: linear-gradient(to right,var(--main-color-1) , var(--main-color-2));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+ position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 200;
+    box-shadow: 0px 4px 20px 0px rgb(20 20 20);   
+  
+  }
+  
+  .left{
+    margin-left: 15px;
+    font-size: 25px;
+    color: white;
+  }
+  
+  .right{
+  margin-left: 20%;
+  }
+  
+  
+  .right nav ul{
+    display: flex;
+    margin-right: 5px;
+    
+  }
+  
+  .right nav ul li a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  
+  
+  .right nav ul li{
+    list-style: none;
+    padding: 2px;
+    margin: 0 25px;
+    
+  }
+/*Student*/
+.student-intern{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height:700px; */
+}
+.student-intern .student-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+   
+}
+.student-intern .student-info h2{
+    
+    background-image: linear-gradient(to right,var(--main-color-1) , var(--main-color-2));
+    border-radius: 50px;
+    padding: 15px;
+    padding-left: 40px;
+    padding-right:40px ;
+    /* display: flex;
+    align-self: center;
+justify-self: center; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.student-intern .student-info h3{
+    font-weight: bolder;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.student-apply{
+    width: 80%;
+    display: flex;
+   height: 90%;
+   
+}
+.student-apply-img{
+   width: 40%;
+   height:100%;
+}
+.student-apply-img img{
+    width:100%;
+    height: 100%;
+}
+.student-apply .info{
+    width:60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: -20px;
+    padding: 40px;
+}
+.student-apply .info p{
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.student-apply .info button{
+    /* border: 1px solid; */
+    background-image: linear-gradient(to right,var(--main-color-1) , var(--main-color-2));
+    border: none;
+    padding: 10px;
+    border-radius: 50px;
+    padding-left: 30px;
+    padding-right:30px ;
+    font-weight: bold;
+    max-width: max-content;
+}
+
+/*Diverse opportunities*/
+.diverse-opport-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to right,var(--main-color-1) , var(--main-color-2));
+    justify-content: center;
+    padding-bottom: 40px;
+}
+.diverse-opport-container .diverse-heading{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width:70%
+}
+.diverse-heading h2{
+background: none;
+
+margin-bottom: 0px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.diverse-heading  p{
+    margin-top: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.diverse-cards-container{
+    width:1100px;
+   margin-bottom: 10px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   
+}
+.diverse-cards h4{
+   font-family:poppins;
+   
+}
+.diverse-cards{
+    width:150px;
+    height:170px;
+    /* border: 1px solid black; */
+ outline: none;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ margin: 10px;
+ background-color: #ffff;
+ border-radius: 10px;
+}
+.card-img{
+    width: 100%;
+    height:45%
+}
+.card-img img{
+    width:50%;
+    height:100%
+}
+/*What inside*/
+.what-inside-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.what-inside-container .awits-heading{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.what-inside-container .awits-heading p{
+    margin-top: 0px;
+    width:90%
+}
+.what-inside-container .types{
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    justify-content: space-around;
+    text-align: center;
+ 
+}
+.what-inside-container .types h2{
+    /* margin: 5px; */
+   font-weight: lighter;
+   width: 200px;
+   /* display: flex;
+   text-align: center;
+   justify-self: center; */
+   margin: auto;
+   margin-top: 8px;
+   padding: 10px;
+   font-size: 1.2rem;
+   background-image: linear-gradient(to right,var(--main-color-1) , var(--main-color-2));
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+/*Team Collaboration*/
+.team-collaboration{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height:500px;
+}
+.team-collaboration h2{
+    width: max-content;
+    padding: 12px;
+    border-radius: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-image: linear-gradient(to right,var(--main-color-1) , var(--main-color-2));
+}
+.team-collaboration .team-collab-data-container{
+    display: flex;
+    height:70%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.team-collab-data-container .team-data{
+    width:40%;
+    margin-right:40px
+}
+.team-img{
+    width:40%;
+    height:100%;
+}
+ .team-img img{
+    width:100%;
+    height: 100%;
+}
+.mentorship{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height:500px;
+}
+.mentorship h2{
+    width: max-content;
+    padding: 12px;
+    border-radius: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-image: linear-gradient(to right,var(--main-color-1) , var(--main-color-2));
+}
+.mentorship .mentorship-data-container{
+    display: flex;
+    height:70%;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+}
+.mentorship-data-container .mentor-data{
+    width:40%;
+    margin-left:40px
+}
+.mentor-img{
+    width:40%;
+    height: 100%;
+}
+.mentor-img img{
+    width:100%;
+    height: 100%;
+}
+/*emabark*/
+.embark-journey{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    /* width: 100%; */
+    height:400px;
+    padding-left: 80px;
+   
+    background-image: linear-gradient(to right,var(--main-color-1) , var(--main-color-2));
+}
+.question{
+margin-top: 20px;
+    width:50%;
+    margin-bottom: 0px;
+}
+.answer{
+    width:80%;
+   
+}
+.embark-button{
+    margin: auto;
+}
+.embark-button button{
+    padding:20px;
+    padding-right: 60px;
+    padding-left: 60px;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 10px;
+
+}
+/*footer*/
+.footer{
+    background-image: linear-gradient(to right,#593e7d , #736d5b);
+    color: white;
+    padding: 40px 10%;
+  }
+  
+  .footer-heading{
+   font-size: 30px;
+   font-weight: bold;
+   margin-bottom: 30px;
+  }
+  
+  .footer-flex{
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-containt{
+    width: 50%;
+  }
+  
+  .footer-links{
+    margin-left: 100px;
+  }
+  
+  .footer-text-heading{
+    font-size: 32px;
+    font-weight: 500;
+    margin: 7px auto;
+  }
+  .footer-text{
+    text-align: left;
+    margin-bottom: 50px;
+  }
+  .phone,.email{
+    text-align: left;
+  
+  }
+  
+  .footer-links-heading{
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  .footer-links ul{
+    column-count: 2;
+    column-gap: 30px;
+    list-style: none;
+  }
+  
+  
+  .social-menu{
+  padding-top: 100px;
+  position: relative;
+  height: 10%;
+  width:  auto;
+   
+  }
+  .social-menu ul {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  margin: 0;
+  display: flex;
+  }
+  .social-menu ul li {
+  list-style: none;
+  margin: 0 10px;
+  }
+  .social-menu ul li .fa {
+  color: #7d00eb;
+  font-size: 25px;
+  line-height: 50px;
+  width: 50px;
+  transition: .5s;
+  }
+  .social-menu ul li .fa:hover {
+  color: #ffffff;
+  }
+  .social-menu ul li a {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  text-align: center;
+  transition: 0.3s;
+  transform: translate(0,0px);
+  box-shadow: -1px 7px 20px 0px rgb(20 20 20);
+  }
+  .social-menu ul li a:hover {
+  transform: rotate(0deg) skew(0deg) translate(0, -10px);
+  }
+  .social-menu ul li:nth-child(1) a:hover {
+  background-color: #3b5999;
+  }
+  .social-menu ul li:nth-child(2) a:hover {
+  background-color: #fb00ff;
+  }
+  
+  .social-menu ul li:nth-child(3) a:hover {
+  background-color: #0077B5;
+  }
+  
+  .social-menu ul li:nth-child(4) a:hover {
+  background-color: #cd201f;
+  }
+  @media screen and (min-width: 300px) and (max-width: 1000px) {
+  .student-apply{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.student-intern .student-info {
+    width:70%;
+}
+.student-apply-img{
+    width:60%;
+}
+.student-intern .info  {
+    width:80%;
+}
+.diverse-cards-container{
+   width: 80%;
+}
+.what-inside-container .types{
+    width:80%;
+}
+.what-inside-container .awits-heading{
+    width:80%;
+}
+.embark-journey{
+    height: auto;
+    padding: 20px;
+}
+.question{
+    width:90%;
+}
+.answer{
+    width:100%;
+}
+  }
+  @media(max-width:860px){
+    .team-collaboration{
+        height: auto;
+        
+    }
+    .team-collaboration .team-collab-data-container {
+        flex-direction: column;
+    }
+    .team-img{
+        width:70%;
+    }
+    .team-collab-data-container .team-data{
+              width: 80%;
+    }
+    .mentorship{
+        height: auto;
+    }
+    .mentorship .mentorship-data-container{
+        flex-direction: column;
+    }
+    .mentorship-data-container .mentor-data{
+        width: 80%;
+    }
+    .mentor-img{
+        width:70%;
+    }
+
+  }
