@@ -1,0 +1,235 @@
+:root {
+    --main-color-1:#C18FFF;
+    --main-color-2:#FFF2CF;
+}
+
+#foo {
+    color: var(--main-color-1);
+    color: var(--main-color-2);
+}
+body{
+font-family: poppins;
+margin: 0;
+}
+/*header*/
+.header{
+    background-image: linear-gradient(to right,var(--main-color-1) , var(--main-color-2));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+ position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 200;
+    box-shadow: 0px 4px 20px 0px rgb(20 20 20);   
+  
+  }
+  
+  .left{
+    margin-left: 15px;
+    font-size: 25px;
+    color: white;
+  }
+  
+  .right{
+  margin-left: 20%;
+  }
+  
+  
+  .right nav ul{
+    display: flex;
+    margin-right: 5px;
+    
+  }
+  
+  .right nav ul li a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  
+  
+  .right nav ul li{
+    list-style: none;
+    padding: 2px;
+    margin: 0 25px;
+    
+  }
+  .checkbtn{
+    float: right;
+    font-size: 2rem;
+    display: none;
+   
+  }
+  #check{
+    display: none;
+  }
+  /*main-page*/
+.talent-main{
+    width:80%;
+    height: 100vh;
+}
+.talent-program-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.talent-heading h2{
+padding: 10px 10px 10px;
+background-image: linear-gradient(to right,var(--main-color-1) , var(--main-color-2));
+}
+.talent-hunt-heading-data {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 80%;
+
+}
+.talent-hunt-heading-data p{
+    margin:0px 0px
+}
+.what-talent-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.what-talent-image
+{
+    width:50%;
+    /* height: auto; */
+}
+.what-talent-image img{
+    width: 100%;
+}
+.what-talent-data{
+    width: 50%;
+    padding-left: 40px;
+}
+
+.what-talent-section2{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+.what-talent-image2
+{
+    width:50%;
+    /* height: auto; */
+}
+.what-talent-image2 img{
+    width: 100%;
+}
+.what-talent-data2{
+    width: 50%;
+    padding-left: 40px;
+}
+/* what awits*/
+.what-awaits-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.what-awaits-main .awits-heading{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.what-awaits-main .awits-heading p{
+    margin-top: 0px;
+    width:90%
+}
+.what-awaits-main .types{
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    justify-content: space-around;
+    text-align: center;
+ 
+}
+.what-awaits-main .types h2{
+    /* margin: 5px; */
+   font-weight: lighter;
+   width: 200px;
+   display: flex;
+   /* text-align: center;
+   justify-self: center;  */
+   margin: auto;
+   margin-top: 8px;
+   padding: 10px;
+   font-size: 1.2rem;
+   background-image: linear-gradient(to right,var(--main-color-1) , var(--main-color-2));
+
+    border-radius: 5px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.ready-kickstart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    width:80%;
+}
+.ready-kickstart button{
+    background-image: linear-gradient(to right,var(--main-color-1) , var(--main-color-2));
+border: none;
+font-size:1rem;
+font-weight: bold;
+    border-radius: 5px;
+    padding: 10px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+@media(max-width:850px){
+    .checkbtn{
+        display: block;
+        margin-right: 40px;
+    
+    }
+    
+    .right ul{
+        top:50px;
+        right:-100%;
+        width:40%;
+        height: 200px;
+        font-size: 1rem;
+        position: fixed;
+        background-image: linear-gradient(to right,#a27dd3 , #d7c899);
+        transition: right 0.5s ease-out;
+        text-align: center;
+        margin-left: 0px;
+
+    }
+   nav ul{
+        display: flex;
+        flex-direction: column;
+        
+        justify-content: right;
+    }
+   .right nav ul li{
+        margin-top: 10px;
+    }
+    #check:checked ~ ul{
+        right: 0;
+    }
+    .checkbtn i::before {
+        content: "\f0c9"; 
+    }
+    #check {
+        display: none; 
+    }
+    #check:checked ~ .checkbtn i::before {
+        content: "\f00d"; 
+    }
+  }

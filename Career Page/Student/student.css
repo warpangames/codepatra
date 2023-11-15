@@ -1,5 +1,6 @@
+
 :root {
-    --main-color-1:#9F6FDC;
+    --main-color-1:#C18FFF;
     --main-color-2:#FFF2CF;
 }
 
@@ -9,6 +10,7 @@
 }
 body{
 font-family: poppins;
+margin: 0;
 }
 /*heder*/
 .header{
@@ -55,6 +57,15 @@ font-family: poppins;
     margin: 0 25px;
     
   }
+  .checkbtn{
+    float: right;
+    font-size: 2rem;
+    display: none;
+   
+  }
+  #check{
+    display: none;
+  }
 /*Student*/
 .student-intern{
     display: flex;
@@ -92,12 +103,16 @@ justify-self: center; */
 .student-apply{
     width: 80%;
     display: flex;
+    justify-content: center;
+    align-items: center;
    height: 90%;
    
 }
 .student-apply-img{
    width: 40%;
    height:100%;
+  
+
 }
 .student-apply-img img{
     width:100%;
@@ -230,7 +245,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    padding: 10px;
    font-size: 1.2rem;
    background-image: linear-gradient(to right,var(--main-color-1) , var(--main-color-2));
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
     border-radius: 5px;
     padding-left: 70px;
     padding-right: 70px;
@@ -364,7 +379,7 @@ margin-top: 20px;
   }
   
   .footer-links{
-    margin-left: 100px;
+    /* margin-left: 100px; */
   }
   
   .footer-text-heading{
@@ -387,7 +402,7 @@ margin-top: 20px;
   }
   
   .footer-links ul{
-    column-count: 2;
+    /* column-count: 2; */
     column-gap: 30px;
     list-style: none;
   }
@@ -452,7 +467,49 @@ margin-top: 20px;
   .social-menu ul li:nth-child(4) a:hover {
   background-color: #cd201f;
   }
-  @media screen and (min-width: 300px) and (max-width: 1000px) {
+  @media(max-width:850px){
+    .checkbtn{
+        display: block;
+        margin-right: 40px;
+    
+    }
+    
+    .right ul{
+        top:50px;
+        right:-100%;
+        width:40%;
+        height: 200px;
+        font-size: 1rem;
+        position: fixed;
+        background-image: linear-gradient(to right,#a27dd3 , #d7c899);
+        transition: right 0.5s ease-out;
+        text-align: center;
+        margin-left: 0px;
+
+    }
+   nav ul{
+        display: flex;
+        flex-direction: column;
+        
+        justify-content: right;
+    }
+   .right nav ul li{
+        margin-top: 10px;
+    }
+    #check:checked ~ ul{
+        right: 0;
+    }
+    .checkbtn i::before {
+        content: "\f0c9"; 
+    }
+    #check {
+        display: none; 
+    }
+    #check:checked ~ .checkbtn i::before {
+        content: "\f00d"; 
+    }
+  }
+  @media screen and (min-width: 300px) and (max-width: 1064px) {
   .student-apply{
     flex-direction: column;
     justify-content: center;
