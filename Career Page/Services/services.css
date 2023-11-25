@@ -210,3 +210,254 @@ body{
     box-shadow: 0px 3px 4px 1px rgb(169 165 165);   
 
 }
+.why-choose-heading{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+.middle{
+    display: flex;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right,var(--main-color-1) , var(--main-color-2));
+}
+.middle-card-container{
+    display: flex;
+    
+    align-items: center;
+    width: 70%;
+}
+.middle-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    margin-left: 30px;
+ height: 250px;
+    box-shadow: 0 0px 5px rgb(143, 140, 140);
+}
+.middle-card img{
+    width: 50%;
+    height: 50%;
+}
+.middle-card span{
+    font-size: 1.5rem;
+    padding-top: 10px;
+}
+
+/* Trusted partners*/
+.our-trusted-partners{
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ height: 300px;
+    background-color: #c8c6c6;
+}
+.our-trusted-heading{
+    font-size: 1.6rem;
+    height: 20%;
+}
+.trusted-images{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 70%;
+
+}
+.trusted-images img{
+    width: 30%;
+    margin-left: 20px;
+}
+/* Technolgoies*/
+.technologies-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    width: 100%;
+
+}
+.technlogies-heading{
+    margin-top: 8px;
+   padding: 10px;
+   font-size: 1.2rem;
+   font-weight: 800;
+   background-image: linear-gradient(to right,var(--main-color-1) , var(--main-color-2));
+
+    border-radius: 40px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.technologies-subheading{
+    padding-top: 20px;
+    font-weight: 500;
+    font-size: 1.7rem;
+}
+.technologies-sub-subheading{
+    font-size: 1.2rem;
+    padding-top: 10px;
+   
+}
+.tech-image-container{
+    padding: 20px;
+    margin-top:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-top: 10px; */
+    width: 70%;
+    background-color:#c5bfbf5c;
+}
+.tech-image-container img{
+    width:20%;
+    margin-left: 10px;
+}
+/* Services*/
+.services-types{
+    width:70%;
+    margin: auto;
+}
+/* services*/
+.team-collaboration{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height:500px;
+}
+.services-heading{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.services-heading p{
+    width: max-content;
+    padding: 12px;
+    border-radius: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-image: linear-gradient(to right,var(--main-color-1) , var(--main-color-2));
+}
+.team-collaboration h2{
+    width: max-content;
+    padding: 12px;
+    border-radius: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+   
+}
+.team-data button{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-image: linear-gradient(to right,var(--main-color-1) , var(--main-color-2));
+}
+.team-collaboration .team-collab-data-container{
+    display: flex;
+    height:70%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.team-collab-data-container .team-data{
+    width:40%;
+    margin-right:40px
+}
+.team-img{
+    width:40%;
+    height:100%;
+}
+ .team-img img{
+    width:100%;
+    height: 100%;
+}
+.mentorship{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height:500px;
+}
+.mentorship h2{
+    width: max-content;
+    padding: 12px;
+    border-radius: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.mentorship .mentorship-data-container{
+    display: flex;
+    height:70%;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+}
+.mentorship-data-container .mentor-data{
+    width:40%;
+    margin-left:40px
+}
+.mentor-img{
+    width:40%;
+    height: 100%;
+}
+.mentor-img img{
+    width:100%;
+    height: 100%;
+}
+.mentor-data button{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-image: linear-gradient(to right,var(--main-color-1) , var(--main-color-2));
+}
+/*Round container*/
+.round-container{
+    /* width: 100%; */
+    
+    padding: 40px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(201, 197, 197, 0.762);;
+}
+.round-image{
+    height: 100px;
+    margin-bottom: 20px;
+    width: 100px;
+    background-color: #Fff;
+    border-radius: 50%;
+    box-shadow: 5px rgba(175, 169, 169, 0.762);
+}
+.blogs-section{
+    padding-top: 40px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.blogs-section span{
+    font-size: 2rem;
+}
+.blogs-card-container{
+    display: flex;
+}
+.blogs-cards{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    background-color: rgb(198, 197, 197);
+}
